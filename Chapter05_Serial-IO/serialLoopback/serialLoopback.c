@@ -17,8 +17,8 @@ int main(void) {
   // -------- Inits --------- //
   LED_DDR = 0xff;                            /* set up LEDs for output */
   //initUSART();
-    UBRR0H = 2 >> 8;                        /* defined in setbaud.h */
-    UBRR0L = 2 & 0xff;
+    UBRR0H = 51 >> 8;                        /* defined in setbaud.h */
+    UBRR0L = 51 & 0xff;
   #if USE_2X
     UCSR0A |= (1 << U2X0);
   #else
