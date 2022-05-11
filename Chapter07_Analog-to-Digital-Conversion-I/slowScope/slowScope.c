@@ -23,8 +23,8 @@ static inline void initFreerunningADC(void) {
 int main(void) {
   // -------- Inits --------- //
   //initUSART();
-    UBRR0H = 6 >> 8;                        /* defined in setbaud.h */
-    UBRR0L = 6 & 0xff;
+    UBRR0H = 51 >> 8;                        /* defined in setbaud.h */
+    UBRR0L = 51 & 0xff;
   #if USE_2X
     UCSR0A |= (1 << U2X0);
   #else

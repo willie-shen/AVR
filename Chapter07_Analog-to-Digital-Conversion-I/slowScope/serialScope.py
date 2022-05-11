@@ -19,8 +19,8 @@ def cheapoScope(serialPort):
 
 if __name__ == "__main__":
     ## list all serial ports being used: python -m serial.tools.list_ports
-    PORT = '/dev/cu.usbserial-AB0LNG54' # update to whatever port is listed in serial.tools.list_ports
-    BAUDRATE =  19200
+    PORT = '/dev/cu.usbserial-00000000' # update to whatever port is listed in serial.tools.list_ports
+    BAUDRATE =  1200
     TIMEOUT = None
     SCREEN_WIDTH = 80
 
