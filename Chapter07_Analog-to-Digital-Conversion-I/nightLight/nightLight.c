@@ -25,8 +25,8 @@ int main(void) {
   // ------ Event loop ------ //
   while (1) {
 
-    lightThreshold = readADC(POT);
-    sensorValue = readADC(LIGHT_SENSOR);
+    lightThreshold = readADC(PC2);
+    sensorValue = readADC(PC1);
 
     if (sensorValue < lightThreshold) {
       LED_PORT = 0xff;
