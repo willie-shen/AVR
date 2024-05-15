@@ -21,10 +21,12 @@ static inline void initTimer1Servo(void) {
   TCCR1B |= (1 << WGM12) | (1 << WGM13);
   TCCR1B |= (1 << CS10);  /* /1 prescaling -- counting in microseconds */
   ICR1 = 20000;                                    /* TOP value = 20ms */
-  TCCR1A |= (1 << COM1A1);              /* Direct output on PB1 / OC1A */
+  TCCR1A |= (1 << COM1A1);              /* Direct output on PB1 / OC1A */ //sets pin at 0, clear at the match
   DDRB |= (1 << PB1);                            /* set pin for output */
 }
-
+/*
+  Basically after counter hits 20000, drop to 0, set the pin, and after counter hits the ocr1a value, clear the pin
+*/
 static inline void showOff(void) {
   printString("Center\r\n");
   OCR1A = PULSE_MID;

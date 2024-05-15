@@ -1,4 +1,5 @@
-
+import sys
+sys.path.append('/usr/local/lib/python3.8/site-packages/')
 
 import time
 import serial
@@ -38,7 +39,7 @@ def calculateTimeDelay(serialPort):
     hms = time.localtime()[3:6]
     hmsDifference = [x - y for x,y in zip(avrHMS, hms)]
     out = "AVR is fast by: {x[0]} hours, {x[1]} minutes, and {x[2]} seconds"
-    print out.format(x=hmsDifference)
+    print(out.format(x=hmsDifference))
     return(hmsDifference)
 
 def calculateTimeDrift(serialPort, startTime):
@@ -47,7 +48,7 @@ def calculateTimeDrift(serialPort, startTime):
     h, m, s = calculateTimeDelay(serialPort)
     driftSeconds = 60*60*h + 60*m + s
     elapsed = time.time() - startTime
-    print "After {:.0f} seconds, ".format(elapsed)
+    print("After {:.0f} seconds, ".format(elapsed))
     return (driftSeconds / elapsed + 1)
  
 
@@ -60,8 +61,8 @@ if __name__ == "__main__":
     SLEEP_TIME = 10            
     ratioLog = []
 
-    s = serial.Serial("/dev/ttyUSB0", 9600, timeout=5)
-    print "Setting time to current time...."
+    s = serial.Serial("/dev/cu.usbserial-00000000", 9600, timeout=5)
+    print("Setting time to current time....")
     ratio = 0
     while not ratio == 1:       # make sure starting time is right on
         startTime = setTimeNow(s) 
@@ -74,7 +75,7 @@ if __name__ == "__main__":
         ratio = calculateTimeDrift(s, startTime)
         ratioLog.append([time.time()-startTime, ratio])
         newOverflow = int(OVERFLOWS_PER_SECOND * ratio)
-        print "OVERFLOWS_PER_SECOND should be {}\n\n".format(newOverflow)
+        print("OVERFLOWS_PER_SECOND should be {}\n\n".format(newOverflow))
         time.sleep(SLEEP_TIME)
         
     ## As you leave this routine running, you should see it bounce

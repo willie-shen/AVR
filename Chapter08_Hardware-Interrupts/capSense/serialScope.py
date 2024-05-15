@@ -1,12 +1,16 @@
+import sys
+sys.path.append('/usr/local/lib/python3.8/site-packages/')
 import serial
 
 def readValue(serialPort):
+    
     return(ord(serialPort.read(1)))
 
 def plotValue(value):
     """ Displays the value on a scaled scrolling bargraph"""
     leadingSpaces = "-" * int(value*(SCREEN_WIDTH-3) / 255)
     print(f"{leadingSpaces} {value:03}")
+
 
 def cheapoScope(serialPort):
     while(1):
@@ -16,7 +20,7 @@ def cheapoScope(serialPort):
 
 if __name__ == "__main__":
     ## list all serial ports being used: python -m serial.tools.list_ports
-    PORT = '/dev/ttyUSB0' # update to whatever port is listed in serial.tools.list_ports
+    PORT = '/dev/cu.usbserial-00000000' # update to whatever port is listed in serial.tools.list_ports
     BAUDRATE =  9600
     TIMEOUT = None
     SCREEN_WIDTH = 80

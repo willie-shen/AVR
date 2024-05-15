@@ -29,7 +29,7 @@ ISR(PCINT1_vect) {
   _delay_us(1);                                      /* charging delay */
 
   CAP_SENSOR_DDR &= ~(1 << CAP_SENSOR);                /* set as input */
-  PCIFR |= (1 << PCIF1);             /* clear the pin-change interrupt */
+  PCIFR |= (1 << PCIF1);             /* clear the pin-change interrupt flag (since flag is set whenever there's an interrupt) */
 }
 
 
@@ -49,7 +49,7 @@ int main(void) {
   while (1) {
 
     chargeCycleCount = 0;                             /* reset counter */
-    CAP_SENSOR_DDR |= (1 << CAP_SENSOR);     /* start with cap charged */
+    CAP_SENSOR_DDR |= (1 << CAP_SENSOR);     /* start with cap charged. Charging the capacitor changes the voltage on the pin, which causes the interrupt (and thus the flag to be set) */
     sei();                            /* start up interrupts, counting */
     _delay_ms(SENSE_TIME);
     cli();                                                     /* done */

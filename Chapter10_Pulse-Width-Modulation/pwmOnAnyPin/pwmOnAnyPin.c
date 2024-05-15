@@ -43,7 +43,7 @@ int main(void) {
   while (1) {
 
     for (i = 0; i < 255; i++) {
-      _delay_ms(DELAY);
+      _delay_ms(DELAY); //3000 microseconds
       brightnessA = i;
       brightnessB = 255 - i;
     }

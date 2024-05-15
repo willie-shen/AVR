@@ -10,9 +10,9 @@ Plays a simple tune, broadcasts it in the AM radio band.
 #include "pinDefines.h"
 #include "scale16.h"
 
-#define COUNTER_VALUE   3              /* determines carrier frequency */
+#define COUNTER_VALUE   1              /* determines carrier frequency */
 
-// From f = f_cpu / ( 2* N* (1 + OCRnx) )
+// From f = f_cpu / ( 2* N* (1 + OCRnx) ) //https://www.engineersgarage.com/waveform-generation-using-avr-microcontroller-atmega16-timers-part-16-46/
 // Good values for the AM band from 2 to 6: pick one that's clear
 // Divide by two b/c we're toggling on or off each loop;
 //  a full cycle of the carrier takes two loops.
@@ -23,6 +23,10 @@ Plays a simple tune, broadcasts it in the AM radio band.
 // 8Mhz / (2 * 1 * (1+6)) = 570 kHz
 // 8Mhz / (2 * 1 * (1+7)) = 500 kHz
 
+//https://www.taitradioacademy.com/topic/how-does-modulation-work-1-1/#:~:text=This%20process%20of%20imposing%20an,code%20inside%20the%20carrier%20wave.
+//https://www.techtarget.com/searchnetworking/definition/modulation
+
+//see the atmega datasheet from the official website
 static inline void initTimer0(void) {
   TCCR0A |= (1 << WGM01);                                  /* CTC mode */
   TCCR0A |= (1 << COM0B0);            /* Toggles pin each time through */

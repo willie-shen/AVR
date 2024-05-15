@@ -32,7 +32,7 @@ extern volatile uint8_t seconds;
 #define SERVO_PORT        PORTB
 #define SERVO_DDR         DDRB
 
-#define OVERFLOWS_PER_SECOND   31250      /* nominal, should calibrate */
+#define OVERFLOWS_PER_SECOND   31250      /* nominal, should calibrate... 1 tick has 256 steps, and 8mhz means 8000000 steps per second */
 
 
 // Serial input and output functions

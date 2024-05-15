@@ -14,6 +14,7 @@ void everySecond(void) {
     everyMinute();
   }
   LED_PORT ^= (1 << LED0);                                    /* blink */
+  //LASER_PORT ^= (1 << LASER);  
   printTime(hours, minutes, seconds);                 /* serial output */
            /* Turn off servo motor after three seconds into new minute */
   if (seconds == 3) {
