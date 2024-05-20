@@ -8,7 +8,7 @@
 #include <avr/interrupt.h>
 #include <avr/sleep.h>                           /* for ADC sleep mode */
 #include <math.h>                           /* for round() and floor() */
-
+#include <util/setbaud.h>
 #include "pinDefines.h"
 #include "USART.h"
 
@@ -62,9 +62,30 @@ int main(void) {
 
   float voltage;
 
+  
+  
+
+
+
   // -------- Inits --------- //
   initUSART();
-  printString("\r\nDigital Voltmeter\r\n\r\n");
+   printString("\r\nDigital Voltmeter\r\n\r\n");
+
+  printString("BAUD: ");
+  printWord(BAUD);
+
+  printString("\r\n");
+  printString("FCPU: ");
+  printWord(F_CPU);
+
+  printString("\r\n");
+  printString("UBRRH_Value: ");
+  printWord(UBRRH_VALUE);
+
+  printString("\r\n");
+  printString("UBRRL_Value: ");
+  printWord(UBRRL_VALUE);
+
   initADC();
   setupADCSleepmode();
 
