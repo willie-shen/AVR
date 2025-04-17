@@ -63,8 +63,8 @@ Discarded input sections
                 0x0000000000000000        0xe ../../AVR-Programming-Library/USART.o
  .text.readString
                 0x0000000000000000       0x58 ../../AVR-Programming-Library/USART.o
- .text.printByte
-                0x0000000000000000       0x32 ../../AVR-Programming-Library/USART.o
+ .text.printWord
+                0x0000000000000000       0x76 ../../AVR-Programming-Library/USART.o
  .text.printBinaryByte
                 0x0000000000000000       0x3a ../../AVR-Programming-Library/USART.o
  .text.nibbleToHexCharacter
@@ -78,8 +78,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.mul
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
- .text.libgcc.div
-                0x0000000000000000       0x18 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc   0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.prologue
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
@@ -89,16 +87,13 @@ Discarded input sections
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.fixed
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
- .debug_line    0x0000000000000000       0x9e /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
- .debug_info    0x0000000000000000       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
- .debug_abbrev  0x0000000000000000       0x14 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
- .debug_aranges
-                0x0000000000000000       0x20 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
  .text          0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
  .data          0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
  .bss           0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.mul
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc   0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.prologue
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
@@ -108,6 +103,11 @@ Discarded input sections
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.fixed
                 0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+ .debug_line    0x0000000000000000       0xce /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+ .debug_info    0x0000000000000000       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+ .debug_abbrev  0x0000000000000000       0x14 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
  .text          0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
  .data          0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
  .bss           0x0000000000000000        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
@@ -324,7 +324,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x94c
+.text           0x0000000000000000      0x8ae
  *(.vectors)
  .vectors       0x0000000000000000       0x68 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000000                __vectors
@@ -423,95 +423,95 @@ END GROUP
                 0x00000000000000fe      0x196 voltmeter.o
                 0x00000000000000fe                printFloat
  .text.startup.main
-                0x0000000000000294       0xb6 voltmeter.o
+                0x0000000000000294       0x6c voltmeter.o
                 0x0000000000000294                main
  .text.initUSART
-                0x000000000000034a       0x22 ../../AVR-Programming-Library/USART.o
-                0x000000000000034a                initUSART
+                0x0000000000000300       0x22 ../../AVR-Programming-Library/USART.o
+                0x0000000000000300                initUSART
  .text.transmitByte
-                0x000000000000036c        0xe ../../AVR-Programming-Library/USART.o
-                0x000000000000036c                transmitByte
+                0x0000000000000322        0xe ../../AVR-Programming-Library/USART.o
+                0x0000000000000322                transmitByte
  .text.printString
-                0x000000000000037a       0x26 ../../AVR-Programming-Library/USART.o
-                0x000000000000037a                printString
- .text.printWord
-                0x00000000000003a0       0x76 ../../AVR-Programming-Library/USART.o
-                0x00000000000003a0                printWord
+                0x0000000000000330       0x26 ../../AVR-Programming-Library/USART.o
+                0x0000000000000330                printString
+ .text.printByte
+                0x0000000000000356       0x32 ../../AVR-Programming-Library/USART.o
+                0x0000000000000356                printByte
  .text.libgcc.div
-                0x0000000000000416       0x28 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x0000000000000416                __udivmodhi4
+                0x0000000000000388       0x18 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000000000000388                __udivmodqi4
  .text.avr-libc.fplib
-                0x000000000000043e        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
-                0x000000000000043e                __subsf3
-                0x0000000000000440                __addsf3
+                0x00000000000003a0        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x00000000000003a0                __subsf3
+                0x00000000000003a2                __addsf3
  .text.avr-libc.fplib
-                0x000000000000044c       0xcc /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
-                0x000000000000046e                __addsf3x
+                0x00000000000003ae       0xcc /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x00000000000003d0                __addsf3x
  .text.avr-libc.fplib
-                0x0000000000000518        0x8 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
-                0x0000000000000518                __divsf3
+                0x000000000000047a        0x8 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                0x000000000000047a                __divsf3
  .text.avr-libc.fplib
-                0x0000000000000520       0xdc /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
-                0x0000000000000540                __divsf3x
-                0x0000000000000546                __divsf3_pse
+                0x0000000000000482       0xdc /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                0x00000000000004a2                __divsf3x
+                0x00000000000004a8                __divsf3_pse
  .text.avr-libc.fplib
-                0x00000000000005fc       0x5e /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
-                0x00000000000005fc                __fixunssfsi
+                0x000000000000055e       0x5e /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x000000000000055e                __fixunssfsi
  .text.avr-libc.fplib
-                0x000000000000065a       0x7a /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
-                0x000000000000065a                __floatunsisf
-                0x000000000000065e                __floatsisf
+                0x00000000000005bc       0x7a /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x00000000000005bc                __floatunsisf
+                0x00000000000005c0                __floatsisf
  .text.avr-libc.fplib
-                0x00000000000006d4       0x2e /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floor.o)
-                0x00000000000006d4                floor
+                0x0000000000000636       0x2e /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floor.o)
+                0x0000000000000636                floor
  .text.avr-libc.fplib
-                0x0000000000000702        0xc /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
-                0x0000000000000702                __fp_inf
+                0x0000000000000664        0xc /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x0000000000000664                __fp_inf
  .text.avr-libc.fplib
-                0x000000000000070e       0x36 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mintl.o)
-                0x000000000000070e                __fp_mintl
+                0x0000000000000670       0x36 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mintl.o)
+                0x0000000000000670                __fp_mintl
  .text.avr-libc.fplib
-                0x0000000000000744       0x1c /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mpack.o)
-                0x0000000000000744                __fp_mpack
-                0x0000000000000748                __fp_mpack_finite
+                0x00000000000006a6       0x1c /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mpack.o)
+                0x00000000000006a6                __fp_mpack
+                0x00000000000006aa                __fp_mpack_finite
  .text.avr-libc.fplib
-                0x0000000000000760        0x6 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
-                0x0000000000000760                __fp_nan
+                0x00000000000006c2        0x6 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x00000000000006c2                __fp_nan
  .text.avr-libc.fplib
-                0x0000000000000766        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
-                0x0000000000000766                __fp_pscA
+                0x00000000000006c8        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x00000000000006c8                __fp_pscA
  .text.avr-libc.fplib
-                0x0000000000000774        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
-                0x0000000000000774                __fp_pscB
+                0x00000000000006d6        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x00000000000006d6                __fp_pscB
  .text.avr-libc.fplib
-                0x0000000000000782       0x22 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
-                0x0000000000000782                __fp_round
+                0x00000000000006e4       0x22 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x00000000000006e4                __fp_round
  .text.avr-libc.fplib
-                0x00000000000007a4       0x44 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
-                0x00000000000007a4                __fp_split3
-                0x00000000000007b4                __fp_splitA
+                0x0000000000000706       0x44 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000000000000706                __fp_split3
+                0x0000000000000716                __fp_splitA
  .text.avr-libc.fplib
-                0x00000000000007e8       0x30 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_trunc.o)
-                0x00000000000007e8                __fp_trunc
+                0x000000000000074a       0x30 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_trunc.o)
+                0x000000000000074a                __fp_trunc
  .text.avr-libc.fplib
-                0x0000000000000818        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
-                0x0000000000000818                __fp_zero
-                0x000000000000081a                __fp_szero
+                0x000000000000077a        0xe /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x000000000000077a                __fp_zero
+                0x000000000000077c                __fp_szero
  .text.avr-libc.fplib
-                0x0000000000000826        0x8 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
-                0x0000000000000826                __mulsf3
+                0x0000000000000788        0x8 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x0000000000000788                __mulsf3
  .text.avr-libc.fplib
-                0x000000000000082e       0xd2 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
-                0x000000000000084c                __mulsf3x
-                0x0000000000000852                __mulsf3_pse
+                0x0000000000000790       0xd2 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x00000000000007ae                __mulsf3x
+                0x00000000000007b4                __mulsf3_pse
  .text.avr-libc.fplib
-                0x0000000000000900       0x48 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(round.o)
-                0x0000000000000900                round
-                0x0000000000000948                . = ALIGN (0x2)
+                0x0000000000000862       0x48 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(round.o)
+                0x0000000000000862                round
+                0x00000000000008aa                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000000948        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
-                0x0000000000000948                exit
-                0x0000000000000948                _exit
+ .fini9         0x00000000000008aa        0x0 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+                0x00000000000008aa                exit
+                0x00000000000008aa                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -530,11 +530,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000000948        0x4 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x00000000000008aa        0x4 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x000000000000094c                _etext = .
+                0x00000000000008ae                _etext = .
 
-.data           0x0000000000800100       0x42 load address 0x000000000000094c
+.data           0x0000000000800100       0x26 load address 0x00000000000008ae
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -545,26 +545,26 @@ END GROUP
                 0x0000000000800100        0x0 voltmeter.o
                                           0x3 (size before relaxing)
  .rodata.main.str1.1
-                0x0000000000800100       0x42 voltmeter.o
+                0x0000000000800100       0x26 voltmeter.o
  *(.gnu.linkonce.r*)
-                0x0000000000800142                . = ALIGN (0x2)
-                0x0000000000800142                _edata = .
-                0x0000000000800142                PROVIDE (__data_end, .)
+                0x0000000000800126                . = ALIGN (0x2)
+                0x0000000000800126                _edata = .
+                0x0000000000800126                PROVIDE (__data_end, .)
 
-.bss            0x0000000000800142        0x0
+.bss            0x0000000000800126        0x0
                 [!provide]                        PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  *(COMMON)
                 [!provide]                        PROVIDE (__bss_end, .)
-                0x000000000000094c                __data_load_start = LOADADDR (.data)
-                0x000000000000098e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000000000008ae                __data_load_start = LOADADDR (.data)
+                0x00000000000008d4                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0000000000800142        0x0
+.noinit         0x0000000000800126        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                        PROVIDE (__noinit_end, .)
-                0x0000000000800142                _end = .
+                0x0000000000800126                _end = .
                 [!provide]                        PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
@@ -637,7 +637,7 @@ END GROUP
  .debug_aranges
                 0x0000000000000048       0x70 ../../AVR-Programming-Library/USART.o
  .debug_aranges
-                0x00000000000000b8       0x20 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x00000000000000b8       0x20 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
  .debug_aranges
                 0x00000000000000d8       0x20 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
  .debug_aranges
@@ -646,45 +646,45 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000      0xfe0
+.debug_info     0x0000000000000000      0xef6
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x5f4 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_info    0x00000000000005f4      0x406 voltmeter.o
- .debug_info    0x00000000000009fa      0x3dc ../../AVR-Programming-Library/USART.o
- .debug_info    0x0000000000000dd6       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
- .debug_info    0x0000000000000e84       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
- .debug_info    0x0000000000000f32       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .debug_info    0x00000000000005f4      0x31c voltmeter.o
+ .debug_info    0x0000000000000910      0x3dc ../../AVR-Programming-Library/USART.o
+ .debug_info    0x0000000000000cec       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
+ .debug_info    0x0000000000000d9a       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .debug_info    0x0000000000000e48       0xae /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
 
 .debug_abbrev   0x0000000000000000      0x8ea
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x5a2 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  .debug_abbrev  0x00000000000005a2      0x19e voltmeter.o
  .debug_abbrev  0x0000000000000740      0x16e ../../AVR-Programming-Library/USART.o
- .debug_abbrev  0x00000000000008ae       0x14 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+ .debug_abbrev  0x00000000000008ae       0x14 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
  .debug_abbrev  0x00000000000008c2       0x14 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
  .debug_abbrev  0x00000000000008d6       0x14 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
 
-.debug_line     0x0000000000000000      0x72d
+.debug_line     0x0000000000000000      0x6c7
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000       0x1a /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_line    0x000000000000001a      0x283 voltmeter.o
- .debug_line    0x000000000000029d      0x2c8 ../../AVR-Programming-Library/USART.o
- .debug_line    0x0000000000000565       0xce /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
- .debug_line    0x0000000000000633       0x62 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
- .debug_line    0x0000000000000695       0x98 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
+ .debug_line    0x000000000000001a      0x24d voltmeter.o
+ .debug_line    0x0000000000000267      0x2c8 ../../AVR-Programming-Library/USART.o
+ .debug_line    0x000000000000052f       0x9e /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodqi4.o)
+ .debug_line    0x00000000000005cd       0x62 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .debug_line    0x000000000000062f       0x98 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_copy_data.o)
 
 .debug_frame    0x0000000000000000      0x208
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0xc0 voltmeter.o
  .debug_frame   0x00000000000000c0      0x148 ../../AVR-Programming-Library/USART.o
 
-.debug_str      0x0000000000000000      0x573
+.debug_str      0x0000000000000000      0x51e
  *(.debug_str)
  .debug_str     0x0000000000000000      0x208 /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  .debug_str     0x0000000000000208      0x245 voltmeter.o
                                         0x279 (size before relaxing)
- .debug_str     0x000000000000044d      0x126 ../../AVR-Programming-Library/USART.o
-                                        0x27a (size before relaxing)
+ .debug_str     0x000000000000044d       0xd1 ../../AVR-Programming-Library/USART.o
+                                        0x282 (size before relaxing)
 
 .debug_loc      0x0000000000000000      0x763
  *(.debug_loc)

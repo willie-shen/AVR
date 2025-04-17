@@ -1,7 +1,7 @@
 /*
    Direct-digital synthesis
    Phasing saw waves demo
-
+https://www.perfectcircuit.com/signal/learning-synthesis-oscillators
 */
 
 #include "fatSaw.h"
@@ -48,7 +48,7 @@ int main(void) {
 
       mixer += fullSaw15[waveStep];
     }
-    mixer = mixer >> OSCILLATOR_SHIFT;
+    mixer = mixer >> OSCILLATOR_SHIFT; //I guess this acts as mixer / (2^NUMBER_OSCILLATORS); 2^(OSCILLATOR_SHIFT) = NUMBER_OSCILLATORS
                                  /* Dividing by bitshift is very fast. */
 
   }                                                  /* End event loop */

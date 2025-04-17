@@ -15,7 +15,7 @@
 
 #define SWITCH              PB7     /* Attach LED or switch relay here */
 
-#define USE_POT               0  /* define to 1 if using potentiometer */
+#define USE_POT               1  /* define to 1 if using potentiometer */
 #if USE_POT
 #define POT               PC5                  /* optional padding pot */
 #endif

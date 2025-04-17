@@ -27,6 +27,9 @@ int main(void) {
 
   SPEAKER_DDR |= (1 << SPEAKER);                     /* speaker output */
 
+  /*
+    #looks like rate is TIME/VOLUME
+  */
   // ------ Event loop ------ //
   while (1) {
 
@@ -59,8 +62,11 @@ int main(void) {
           }
         }
       }
+
+      //volume * rate gives you the time
+      //FULL_VOLUME - volume gets bigger as the volume decreases
       else if (noteClock < DECAY_TIME) {                      /* decay */
-        if ((noteClock - ATTACK_TIME) >
+        if ((noteClock - ATTACK_TIME) > 
             (FULL_VOLUME - volume) * DECAY_RATE) {
           if (volume > SUSTAIN_LEVEL) {
             volume--;

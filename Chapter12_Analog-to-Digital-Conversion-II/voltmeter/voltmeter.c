@@ -71,20 +71,23 @@ int main(void) {
   initUSART();
    printString("\r\nDigital Voltmeter\r\n\r\n");
 
-  printString("BAUD: ");
-  printWord(BAUD);
+  // printString("BAUD: ");
+  // printWord(BAUD);
 
-  printString("\r\n");
-  printString("FCPU: ");
-  printWord(F_CPU);
+  // char* buffer;
+  // //int value = 4564;
+  // sprintf(buffer, "%l", F_CPU);
+  // printString("\r\n");
+  // printString("FCPU: ");
+  // printString(buffer);
 
-  printString("\r\n");
-  printString("UBRRH_Value: ");
-  printWord(UBRRH_VALUE);
+  // printString("\r\n");
+   printString("UBRRH_Value: ");
+   printByte(UBRRH_VALUE);
 
-  printString("\r\n");
-  printString("UBRRL_Value: ");
-  printWord(UBRRL_VALUE);
+  // printString("\r\n");
+  // printString("UBRRL_Value: ");
+  // printWord(UBRRL_VALUE);
 
   initADC();
   setupADCSleepmode();

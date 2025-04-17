@@ -43,7 +43,7 @@ int main(void) {
       pwmValue = fullSine[waveStep];                 /* lookup voltage */
 
       loop_until_bit_is_set(TIFR0, TOV0);        /* wait for PWM cycle */
-      OCR0A = 128 + pwmValue;                     /* set new PWM value */
+      OCR0A = 128 + pwmValue;                     /* set new PWM value */ //When counter hits this value, turn off oc0a. When counter hits FF, reset to 0, and turn back on
       TIFR0 |= (1 << TOV0);                  /* reset PWM overflow bit */
     }
 

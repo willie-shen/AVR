@@ -17,7 +17,7 @@
 
 // Default envelope values (slightly percussive)
 // Play around with these!  
-#define ATTACK_RATE    8	/* 0-255 */
+#define ATTACK_RATE    8	/* 0-255 */   //looks like rate is time/volume
 #define DECAY_RATE     120	/* 0-255 */
 #define SUSTAIN_LEVEL  25	/* 0-255 */
 #define SUSTAIN_TIME   4000	/* 0-65535 */
